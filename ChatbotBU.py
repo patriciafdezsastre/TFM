@@ -129,7 +129,7 @@ if user_question:
         for pdf in relevant_pdfs:
             context += extract_text_with_pymupdf(pdf) + "\n"
         
-      
+        #Prompt
         messages = [
             {"role": "system", "content": f"""
             You are TelReg AI, a chatbot to answer questions related to the measurement methodologies of the NRAs provided to you. \
